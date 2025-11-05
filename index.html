@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据库表描述搜索</title>
+    <link rel="stylesheet" href="/static/style.css">  <!-- 静态文件路径 -->
+</head>
+<body>
+    <h1>数据库表描述搜索</h1>
+    <label for="dbType">选择数据库类型：</label>
+    <select id="dbType">
+        <option value="mysql">MySQL</option>
+        <option value="postgres">PostgreSQL</option>
+    </select>
+    <br>
+    <label for="searchInput">输入表描述关键词：</label>
+    <input type="text" id="searchInput">
+    <button id="searchBtn">搜索</button>
+
+    <h2>搜索结果：</h2>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>表名</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody id="resultsBody">
+        </tbody>
+    </table>
+
+    <script src="/static/script.js"></script>  <!-- 静态文件路径 -->
+</body>
+</html>
